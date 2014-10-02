@@ -1,17 +1,32 @@
-var theButton =$('.the-button');
-var header = $('.heading');
+var salesdetailsleft =$('.sales__detailsleft');
+/* var= making a box, salesdetailsleft is what the box is called and '.salesdetailsleft' is what is inside the box */
+var salesleft = $('.salesleft');
 
 
 var buttonClickHandler = function () {
-	var currentState = header.attr('data-state');
-	
+	var currentState = salesdetailsleft.attr('data-state');
 	if (currentState == 'active') {
-		header.attr('data-state', 'inactive');
-	
+		salesdetailsleft.attr('data-state', 'inactive');
 	} else {
-	
-		header.attr('data-state','active');
+		salesdetailsleft.attr('data-state','active');
 	}	
 };
 
-theButton.on('click', buttonClickHandler);
+salesright.on('click', buttonClickHandler);
+
+var salesdetailsright =$('.sales__detailsright');
+/* var= making a box, salesdetailsleft is what the box is called and '.salesdetailsleft' is what is inside the box */
+var salesright = $('.salesright');
+
+
+var buttonClickHandler = function () {
+	var currentState = salesdetailsright.attr('data-state');
+	if (currentState == 'active') {
+		salesdetailsright.attr('data-state', 'inactive');
+	} else {
+		salesdetailsright.attr('data-state','active');
+	}	
+};
+
+salesright.on('click', buttonClickHandler);
+
