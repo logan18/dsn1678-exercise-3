@@ -12,7 +12,8 @@ var buttonClickHandler = function () {
 	}	
 };
 
-salesright.on('click', buttonClickHandler);
+salesleft.on('click', buttonClickHandler);
+
 
 var salesdetailsright =$('.sales__detailsright');
 /* var= making a box, salesdetailsleft is what the box is called and '.salesdetailsleft' is what is inside the box */
@@ -29,4 +30,6 @@ var buttonClickHandler = function () {
 };
 
 salesright.on('click', buttonClickHandler);
+
+
 
